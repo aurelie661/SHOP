@@ -1,0 +1,49 @@
+//GET ALL
+# GET http://localhost:5000/app_user
+# ----------------------------------------
+//GET ONE BY ID
+# GET http://localhost:5000/app_user/2
+# ------------------------------------------
+//GET PAR UN POST AVEC CONDITION
+# POST http://localhost:5000/app_user
+# Content-Type: application/json
+
+# {
+#     "where":"lastname = 'Louis'"
+# }
+# -----------------------------------------
+//PUT POUR CREER
+# PUT http://localhost:5000/app_user
+# Content-Type: application/json
+
+# {
+#     "firstname":"",
+#     "lastname":"test2",
+#     "email":"test3",
+#     "message":"test4"
+# }
+# -------------------------------------------
+# //UPDATE SIMPLE PAR L ID
+# PUT http://localhost:5000/app_user/2
+# Content-Type: application/json
+
+# {
+#     "lastname": "Jule"
+# }
+
+# ------------------------------------
+//UPDATE AVEC CONDITION
+# PATCH http://localhost:5000/app_user
+# Content-Type: application/json
+
+# {
+#     "lastname": "Nathan",
+#     "where": "lastname = 'Louis'"
+# }
+# -------------------------------------
+# SOFT DELETE PAR L ID
+# PATCH http://localhost:5000/app_user/2
+# --------------------------------------
+# DELETE PAR L ID
+# DELETE http://localhost:5000/app_user/6
+# --------------------------------------

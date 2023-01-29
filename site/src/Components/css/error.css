@@ -1,0 +1,263 @@
+body {
+  font-size: 20px;
+  background: #efefef;
+}
+
+#clouds {
+  padding: 20vh 20vw;
+  background: #d5f6ff;
+  background: -webkit-linear-gradient(top, #d5f6ff 0%, #7fe3ff 100%);
+  background: -linear-gradient(top, #d5f6ff 0%, #7fe3ff 100%);
+  background: -moz-linear-gradient(top, #d5f6ff 0%, #7fe3ff 100%);
+  z-index: 1;
+  border-bottom: 10px #faa732 solid;
+  min-height: 100vh;
+}
+
+/*Time to finalise the cloud shape*/
+.cloud {
+  width: 200px;
+  height: 60px;
+  background: #fff;
+  border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  position: relative;
+}
+
+.cloud:before, .cloud:after {
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+  width: 120px;
+  height: 120px;
+  top: -55px;
+  left: auto;
+  right: 15px;
+}
+
+.x1 {
+  -webkit-animation: moveclouds 15s linear infinite;
+  -moz-animation: moveclouds 15s linear infinite;
+  -o-animation: moveclouds 15s linear infinite;
+}
+
+.x2 {
+  left: 200px;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0.6;
+  -webkit-animation: moveclouds 25s linear infinite;
+  -moz-animation: moveclouds 25s linear infinite;
+  -o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+  left: -250px;
+  top: -200px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8;
+  -webkit-animation: moveclouds 20s linear infinite;
+  -moz-animation: moveclouds 20s linear infinite;
+  -o-animation: moveclouds 20s linear infinite;
+}
+
+.x4 {
+  left: 470px;
+  top: -250px;
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+  opacity: 0.75;
+  -webkit-animation: moveclouds 18s linear infinite;
+  -moz-animation: moveclouds 18s linear infinite;
+  -o-animation: moveclouds 18s linear infinite;
+}
+
+.x5 {
+  left: -150px;
+  top: -150px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8;
+  -webkit-animation: moveclouds 20s linear infinite;
+  -moz-animation: moveclouds 20s linear infinite;
+  -o-animation: moveclouds 20s linear infinite;
+}
+
+#global {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#title {
+  position: relative;
+  margin-top: 3%;
+  left: 5%;
+  font-family: 'Anton', sans-serif;
+}
+
+#content {
+  position: relative;
+  bottom: 0px;
+  left: 5%;
+  width: 100%;
+  color: #203940;
+  text-shadow: 1px 1px 8px #428598
+}
+
+#img {
+  width: 30%;
+  min-width: 250px;
+  max-width: 400px;
+  float: left;
+}
+
+.stitre {
+  font-family: 'Anton', sans-serif;
+  font-size: 2em;
+}
+
+.txt {
+  font-size: 1.5em;
+  font-family: 'Lato', sans-serif;
+}
+
+
+@media screen and (max-width: 760px) {
+  body {
+      font-size: 18px;
+  }
+
+  #content {
+      position: relative;
+      color: #000
+  }
+}
+
+@media screen and (max-width: 715px) {
+  body {
+      font-size: 14px;
+  }
+
+  #img {
+      min-width: 150px;
+  }
+
+  #img img {}
+}
+
+@media screen and (max-width: 625px) {
+  body {
+      font-size: 12px;
+  }
+}
+
+@media screen and (max-width:430px) {
+  body {
+      font-size: 10px;
+  }
+
+  #content {
+      position: relative;
+      color: #000
+  }
+
+  #img {
+      position: absolute;
+      top: 0px;
+      right: -20px;
+      width: 20%;
+  }
+
+  #img img {
+      max-width: 80%;
+  }
+
+}
+
+@media screen and (min-width: 1400px) {
+  #title {
+      margin-top: 1%;
+      left: 3%;
+  }
+}
+
+
+
+
+
+/****************************** CSS MANUEL **************************/
+  .colorPink{
+      color:#ff0084;
+  }
+
+  a:hover{
+      color:grey;
+  }
+
+  .txt-italic{
+      font-style: italic;
+  }
+
+  .max-width70{
+      max-width:70%;
+  }
+
+  .float-left{
+      float: left;
+  }
+
+  .padding3em{
+      padding: 10vh;
+  }
+
+  .text3-5em{
+      font-size:3.5em
+  }
+
+  .text4-5em{
+      font-size:7.5em
+  }
+
+  .text2-5em{
+      font-size:2.5em
+  }
+
+  .ml-10em{
+      margin-left: 10em;
+  }
+
+  @media (min-width:250px) and (max-width: 870px) {
+      .ml-10em{
+          margin-left: 3em;
+      }
+  }
+
+  @media (min-width:870px) and (max-width: 1200px) {
+      .ml-10em{
+          margin-left: 5em;
+      }
+  }

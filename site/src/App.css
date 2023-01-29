@@ -1,0 +1,401 @@
+.App {
+  text-align: center;
+  background-color: var(--background);
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: 'Vidaloka', serif;
+  transition: all .5s;
+}
+
+.logo{
+  width: 200px;
+  position: absolute;
+  left: 100px;
+}
+/* --------------------------------------------------------------------DARK MODE------------------------------------------------------------------- */
+#custom-switch{
+  position: absolute;
+  top: 10px;
+  right:10px;
+  z-index: 50;
+  transition: all .5s;
+}
+#label-switch{
+  position: absolute;
+  top: 10px;
+  right: 60px;
+  letter-spacing: 0.1rem;
+  z-index: 50;
+  transition: all .5s;
+  color: var(--text-primary);
+}
+/****************************************************************** NAVBAR ************************************************************************/
+.myCol{
+  background-color: var(--background-nav);
+  font-size: 1.2rem;
+}
+.myNav{
+  color: var(--text-secondary)!important;
+  letter-spacing: 0.1rem;
+  transition: 0.3s!important;
+}
+.myNav:hover{
+  color: var(--text-nav)!important;
+  letter-spacing: 0.1rem;
+}
+/********************************************************************* TITLE AND SCROLLER *************************************************************/
+.myTitle {
+  font-size:6em;
+  color: var(--text-primary);
+  letter-spacing: 0.3rem;
+}
+
+.myTitle:hover {
+  font-size: 6em;
+  color: var(--text-primary);
+  letter-spacing: 0.3rem;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.scroller {
+  display: flex;
+  color: var(--text-scroller);
+  background-color:var(--text-primary);
+  height: 26px;
+  overflow: hidden;
+  letter-spacing: 0.1rem;
+}
+/****************************************************************** CARDS *************************************************************************/
+#card{
+  background-color: var(--background); 
+  min-width: 100vw;
+  min-height: 85vh;
+  transition: all .5s;
+}
+   
+#img{
+   height: 230px;
+   object-fit: cover;
+}
+#title{
+  color: var(--text-secondary);
+}
+#cardBody{
+  background-color: var(--background-nav);
+}
+.modal-header{
+   color: var(--text-modal);
+}
+#imgCarousel{
+   margin: 70px auto auto auto;
+   min-width: 1300px;
+   height:600px;
+   object-fit: cover;
+}
+.title_carousel{
+  width: 350px;
+  color:var(--text-primary)!important;
+}
+/******************************************************************** MODAL***********************************************************************/
+.text-justify {
+  text-align: justify;
+}
+/***************************************************************** CONTACT **************************************************************************/
+.contact{
+  background-color: var(--background);
+  min-width: 80vw;
+  min-height: 90vh;
+  transition: all .5s;
+  margin-top: 80px;   
+}
+.form{
+  background-color: var(--background-nav);
+}
+.title_form{
+  font-size: 3.5em;
+  color: var(--text-span);
+  letter-spacing: 0.2rem;
+}
+.label_form{
+  color: var(--text-span);
+  letter-spacing: 0.1rem;
+}
+.form-control{
+  font-style: italic;
+  max-width: 270px;
+  margin: auto;
+}
+.button{
+  background-color: var(--text-primary)!important;
+  color: var(--background-nav)!important;
+  letter-spacing: 0.2rem;
+  transition: all .5s;
+}
+.button:hover{
+  background-color: var(--background)!important;
+  color: var(--text-primary)!important;
+  letter-spacing: 0.2rem;
+}
+/**************************************************************** FOOTER ***************************************************************************/
+.myFooter{
+  background-color: var(--background-nav);
+  color: var(--text-span);
+  padding: 9px;
+}
+/* -----------------------------------------------------***************LAPTOP 1024****************--------------------------------------------------- */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .logo{
+    width:180px;
+    position: absolute;
+    left:0px;
+  }
+  #imgCarousel{
+    margin: 80px auto auto auto;
+    min-width: 1000px;
+    height:500px;
+    object-fit: cover;
+  }
+  .title_carousel{
+    width: 18rem;
+    font-size:1.5em;
+  }
+  .form{
+    min-width:40vw ;
+  }
+  .title_form{
+    font-size: 3em;
+  }
+  .form-control{
+    max-width: 280px;
+  }
+}
+/* -----------------------------------------------------******************TABLET***************--------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #custom-switch{
+    position: absolute;
+    top: 125px;
+    right:10px;
+    z-index: 50;
+    transition: all .5s;
+  }
+  #label-switch{
+    position: absolute;
+    top: 125px;
+    right: 60px;
+    z-index: 50;
+    transition: all .5s;
+    color: var(--text-primary);
+  }
+  .logo{
+    width: 145px;
+    position: absolute;
+    left: -15px;
+  }
+  .myTitle {
+    font-size: 4.5em;
+    color: var(--text-primary);
+    letter-spacing: 0.3rem;
+  }
+  .myTitle:hover {
+    font-size: 4.5em;
+    color: var(--text-primary);
+    letter-spacing: 0.3rem;
+  }
+  #imgCarousel{
+    margin: 80px auto auto auto;
+    min-width: 900px;
+    height:450px;
+    object-fit: cover;
+  }
+  
+  .title_carousel{
+    width: 14rem;
+    font-size:1.4em;
+  }
+  .contact{
+    min-height: 93vh;
+  }
+  .form{
+    min-width:65vw ;
+  }
+  .form-control{
+    max-width: 280px;
+    margin: auto;
+  }
+  .title_form{
+    font-size: 2.8em;
+  }
+}
+/* -----------------------------------------------------******************MOBILE L***************--------------------------------------------------- */
+@media (min-width: 425px) and (max-width: 767px) {
+  #custom-switch{
+    position: absolute;
+    top: 209px;
+    right:10px;
+    z-index: 50;
+    transition: all .5s;
+  }
+  #label-switch{
+    position: absolute;
+    top: 209px;
+    right: 60px;
+    z-index: 50;
+    transition: all .5s;
+    color: var(--text-primary);
+  }
+  .logo{
+    width: 140px;
+    position: absolute;
+    left: 0px;
+  }
+  .myTitle {
+    font-size: 4em;
+    color: var(--text-primary);
+    letter-spacing: 0.3rem;
+  }
+  
+  .myTitle:hover {
+    font-size: 4em;
+    color: var(--text-primary);
+    letter-spacing: 0.3rem;
+  }
+  #imgCarousel{
+    margin: 80px auto auto auto;
+    min-width: 400px;
+    height:350px;
+    object-fit: cover;
+  }
+  .title_carousel{
+    width: 10rem;
+    font-size:1em;
+  }
+  .form{
+    min-width: 90vw;
+    max-height: 100vh;
+  }
+  .title_form{
+    font-size: 2.5em;
+  }
+  .form-control{
+    max-width: 280px;
+    margin: auto;
+  }
+}
+/* -----------------------------------------------------******************MOBILE M***************--------------------------------------------------- */
+@media (min-width: 375px) and (max-width: 424px) {
+  #custom-switch{
+    position: absolute;
+    top: 173px;
+    right:10px;
+    z-index: 50;
+    transition: all .5s;
+  }
+  #label-switch{
+    position: absolute;
+    top: 173px;
+    right: 60px;
+    z-index: 50;
+    transition: all .5s;
+    color: var(--text-primary);
+  }
+  .logo{
+    display: none;
+  }
+  .myTitle {
+    font-size: 3.3em;
+    color: var(--text-primary);
+    letter-spacing: 0.3rem;
+  }
+  
+  .myTitle:hover {
+    font-size: 3.3em;
+    color: var(--text-primary);
+    letter-spacing: 0.3rem;
+  }
+  
+  #imgCarousel{
+    margin: 80px auto auto auto;
+    min-width: 340px;
+    height:250px;
+    object-fit: cover;
+  }
+  .title_carousel{
+    width: 12rem;
+    font-size:1.2em;
+  }
+  .contact{
+    min-height: 93vh;
+  }
+  .form{
+    min-width: 90vw;
+    max-height: 100vh;
+  }
+  .title_form{
+    font-size: 3em;
+  }
+  .form-control{
+    max-width: 200px;
+    margin: auto;
+  }
+}
+/* -----------------------------------------------------******************MOBILE S***************--------------------------------------------------- */
+@media (min-width: 320px) and (max-width: 374px) {
+  #custom-switch{
+    position: absolute;
+    top: 173px;
+    right:10px;
+    z-index: 50;
+    transition: all .5s;
+  }
+  #label-switch{
+    position: absolute;
+    top: 173px;
+    right: 60px;
+    z-index: 50;
+    transition: all .5s;
+    color: var(--text-primary);
+  }
+  .logo{
+    display: none;
+  }
+  .myTitle {
+    font-size: 3.3em;
+    color: var(--text-primary);
+    letter-spacing: 0.3rem;
+  }
+  
+  .myTitle:hover {
+    font-size: 3.3em;
+    color: var(--text-primary);
+    letter-spacing: 0.3rem;
+  }
+  
+  #imgCarousel{
+    margin: 60px auto auto auto;
+    min-width: 100px;
+    max-height:300px;
+    object-fit: cover;
+  }
+  .title_carousel{
+    width: 8rem;
+    font-size:0.8em;
+  }
+  .contact{
+    min-height: 93vh;
+  }
+  .form{
+    min-width: 90vw;
+    max-height: 100vh;
+  }
+  .title_form{
+    font-size: 2.8em;
+  }
+  .form-control{
+    max-width: 200px;
+    margin: auto;
+  }
+}
+

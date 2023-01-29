@@ -1,0 +1,19 @@
+:root {
+  --background: #F2EDD5;
+  --background-nav:rgb(187,173,255);
+  --text-primary:#14006d;
+  --text-secondary:#060022;
+  --text-span:#14006d;
+  --text-nav:#F2EDD5;
+  --text-modal:#001a3b;
+  --text-label:#001a3b;
+  --text-scroller:#F2EDD5;
+}
+[data-theme='dark'] {
+--background: #2c2c2c;
+--background-nav:#F2EDD5;
+--text-primary: rgb(187,173,255);
+--text-secondary:rgb(92, 92, 92);
+--text-nav:rgb(187,173,255);
+--text-scroller:#001a3b;
+}

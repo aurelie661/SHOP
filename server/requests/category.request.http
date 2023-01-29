@@ -1,0 +1,50 @@
+//GET ALL
+# GET http://localhost:5000/category
+# ----------------------------------------
+//GET ONE BY ID
+# GET http://localhost:5000/category/2
+# ------------------------------------------
+//GET PAR UN POST AVEC CONDITION
+# POST http://localhost:5000/category
+# Content-Type: application/json
+
+# {
+#     "email":"test@test.fr",
+#     "password":"test"
+# }
+# -----------------------------------------
+//PUT POUR CREER
+# PUT http://localhost:5000/category
+# Content-Type: application/json
+
+# {
+#     "firstname":"",
+#     "lastname":"test2",
+#     "email":"test3",
+#     "message":"test4"
+# }
+# -------------------------------------------
+# //UPDATE SIMPLE PAR L ID
+# PUT http://localhost:5000/category/2
+# Content-Type: application/json
+
+# {
+#     "lastname": "Jule"
+# }
+
+# ------------------------------------
+//UPDATE AVEC CONDITION
+# PATCH http://localhost:5000/category
+# Content-Type: application/json
+
+# {
+#     "lastname": "Nathan",
+#     "where": "lastname = 'Louis'"
+# }
+# -------------------------------------
+# SOFT DELETE PAR L ID
+# PATCH http://localhost:5000/category/2
+# --------------------------------------
+# DELETE PAR L ID
+# DELETE http://localhost:5000/category/6
+# --------------------------------------

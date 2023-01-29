@@ -1,0 +1,52 @@
+//GET ALL
+# GET http://localhost:5000/auth
+# ----------------------------------------
+//GET ONE BY ID
+# GET http://localhost:5000/auth
+# ------------------------------------------
+//GET PAR UN POST AVEC CONDITION
+# POST http://localhost:5000/auth/login
+# Content-Type: application/json
+
+# {
+#     "login":"aurelbout59@gmail.com",
+#     "password":"Wazemmeslille59!!!"
+# }
+
+# -----------------------------------------
+
+//PUT POUR CREER
+# PUT http://localhost:5000/auth/register
+# Content-Type: application/json
+
+# {
+#     "login":"TEST",
+#     "password":"test2"
+# }
+
+# -------------------------------------------
+
+# //UPDATE SIMPLE PAR L ID
+# PUT http://localhost:5000/auth/2
+# Content-Type: application/json
+
+# {
+#     "lastname": "Jule"
+# }
+
+# ------------------------------------
+//UPDATE AVEC CONDITION
+# PATCH http://localhost:5000/auth
+# Content-Type: application/json
+
+# {
+#     "lastname": "Nathan",
+#     "where": "lastname = 'Louis'"
+# }
+# -------------------------------------
+# SOFT DELETE PAR L ID
+# PATCH http://localhost:5000/auth/2
+# --------------------------------------
+# DELETE PAR L ID
+# DELETE http://localhost:5000/auth/6
+# --------------------------------------
